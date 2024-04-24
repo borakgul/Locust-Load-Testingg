@@ -51,7 +51,7 @@ class WebsiteUser(HttpUser):
     def delete_user(self):
         payload = {
             "id": 123312321,
-            "username": "borakgull",
+            "username": "borakgulle",
             "firstName": "test",
             "lastName": "akguk",
             "email": "boratest@test.com",
@@ -59,8 +59,8 @@ class WebsiteUser(HttpUser):
             "phone": "121312123123",
             "userStatus": 1
         }
-        self.client.put("/v2/user/borakgull", json=payload)
-        self.client.delete("/v2/user/borakgull")
+        self.client.put("/v2/user/borakgulle", json=payload)
+        self.client.delete("/v2/user/borakgulle")
 
     @task
     def createWithArray(self):
